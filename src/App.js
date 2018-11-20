@@ -1,29 +1,29 @@
 import React, { Component } from 'react';
-import SearchBar from './SearchBar';
-import AssetsUpload from './AssetsUpload';
 import Menu from './Menu';
+import Content from './Content';
 import './App.css'
 
 
 class App extends Component{
-  constructor(){
-    super()
-    this.state = {
-      selectedFile: null,
-      loaded: 0
-    }
-  }
 
+state = {visiableView: "Search"}
+
+handleMenuChange = (value) =>{
+  this.setState({
+    visiableView: value
+  })
+}
   render() {
     return (
       <div>
         <header className="header">
           <h2>Promotion Manager</h2>
         </header>
-        <Menu/>
-        <SearchBar/>
-        <AssetsUpload/>
-        
+        <div className="container">
+          <Menu changeContent={this.handleMenuChange}/>
+          <Content visiableView={this.state.visiableView}/>
+        </div>
+        <footer className="footer"/>
       </div>
     )
   }
