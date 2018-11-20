@@ -1,7 +1,7 @@
  import React from 'react';
  import './Menu.css'
- 
- export default({changeContent})=>(
+
+ export default ({changeContent})=>(
    <div className="menu">
       <a href="#" onClick={() => changeContent("AssetUpload")}>AssetUpload</a>
       <a href="#" onClick={() => changeContent("Search")}>Search</a>
