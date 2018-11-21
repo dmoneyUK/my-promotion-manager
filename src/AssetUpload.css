@@ -1,3 +1,18 @@
-.textarea {
-   padding: 10px;
+.asset_upload_textarea {
+   width: 50%;
  }
+
+ .asset_upload_form{
+  display: flex;
+  flex-direction: column;
+ }
+
+ .asset_upload_button{
+    width: 10%;
+    padding-top: 10px;
+ }
+
+ .asset_upload_label{
+  padding-top: 5px;
+}
+
