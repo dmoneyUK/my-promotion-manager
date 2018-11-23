@@ -9,7 +9,6 @@ let ventures = [
 
 class Search extends Component {
 
-
   render(){
     return (
       <div>

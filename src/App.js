@@ -6,12 +6,12 @@ import './App.css'
 
 class App extends Component{
 
-  state = {visiableView: "Search"}
+  state = {visiableView: "PromotionEditor"}
 
   handleMenuChange = (value) =>{
-  this.setState({
-    visiableView: value
-  })
+    this.setState({
+      visiableView: value
+    })
   }
   render() {
     return (
