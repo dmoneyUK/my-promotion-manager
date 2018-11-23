@@ -35,10 +35,9 @@ class AssetUpload extends Component{
 
   render() {
 
-    let item2 = <Item message="a new message" />;
-    let item3 = <Item message="another message" />;
-    let item4 = <Item message="one more task" />;
-    let allTheThings = [item2, item3, item4];
+    let item2 = <Item message="JackpotJoy" />;
+    let item3 = <Item message="HeartBingo" />;
+    let allTheThings = [item2, item3];
 
     return (
       <div className="AssetUpload">
@@ -48,16 +47,9 @@ class AssetUpload extends Component{
             Name:
             <input type="text" name="name" />
           </label>
-          <input type="submit" value="Submit" className="asset_upload_button"/>
-          <input type="submit" value="Reset" className="asset_upload_button"/>
 
           <div>
             <ItemList allItems={allTheThings}/>
-            <br />
-            <br />
-            <br />
-            {/* <ItemCount count={allTheThings.length} /> */}
-            <hr />
           </div>
         </form>
         <div>
