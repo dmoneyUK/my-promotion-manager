@@ -35,9 +35,9 @@ class AssetUpload extends Component{
 
   render() {
 
-    let item2 = <Item message="JackpotJoy" />;
-    let item3 = <Item message="HeartBingo" />;
-    let allTheThings = [item2, item3];
+    const item2 = <Item message="JackpotJoy" />;
+    const item3 = <Item message="HeartBingo" />;
+    const allTheThings = [item2, item3];
 
     return (
       <div className="AssetUpload">
