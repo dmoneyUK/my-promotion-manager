@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import PropTypes from "prop-types";
 import './table.css'
 
 class  Venture extends Component{
@@ -13,5 +14,12 @@ class  Venture extends Component{
         )
     }
 }
+
+Venture.propTypes = {
+    venture: PropTypes.object.isRequired
+
+}
+
+Venture.defaultProps = {};
 
 export default Venture

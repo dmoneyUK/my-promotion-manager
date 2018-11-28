@@ -1,9 +1,7 @@
 import React,{Component} from "react"
+import PropTypes from "prop-types";
 
 class ItemList extends Component{
-    constructor(props){
-        super();
-    }
 
     render(){
         let items = this.props.allItems.map(thing => thing);
@@ -13,4 +11,10 @@ class ItemList extends Component{
     }
 }
 
+ItemList.propTypes = {
+    allItems: PropTypes.array
+  };
+  
+ItemList.defaultProps = {};
+  
 export default ItemList;

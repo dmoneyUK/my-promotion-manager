@@ -1,5 +1,6 @@
-import React, {Component} from 'react';
+import React, {Component} from 'react'
 import Venture from './Venture.js'
+import PropTypes from "prop-types"
 
 class VentureList extends Component{
     constructor(props){
@@ -10,9 +11,10 @@ class VentureList extends Component{
         }
       }
     
-      handleInput = e => {
+    handleInput = e => {
         this.setState({query: e.target.value})
-      }
+    }
+
     render(){
         let filteredVentures = this.props.ventures.filter(
             (venture) => {
@@ -41,5 +43,12 @@ class VentureList extends Component{
     }
 
 }
+
+VentureList.propTypes = {
+
+    ventures: PropTypes.array
+}
+
+Venture.defaultProps = {};
 
 export default VentureList

@@ -13,6 +13,7 @@ class PromotionEditor extends Component{
                     <input type="text" name="Venture Name"/>
                     Duration:
                     <input type="text" name="Duration"/>
+                    
                     <input type="submit" value="Save & Close" />
                     <input type="submit" value="Save & Continue" />
                     <input type="submit" value="Cancel" />
