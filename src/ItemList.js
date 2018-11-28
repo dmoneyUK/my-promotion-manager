@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 class ItemList extends Component{
 
     render(){
-        let items = this.props.allItems.map(thing => thing);
+        const items = this.props.allItems.map(thing => thing);
         return (
             <h4>{items}</h4>
         );

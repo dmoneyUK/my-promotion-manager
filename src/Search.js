@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import VentureLists from './VentureList';
+import VentureLists from './PromotionList';
 import './table.css'
 
-let ventures = [
-  {name:"JackpotJoy", device: "desktop", image:"No Image"},
-  {name:"HeartBingo", device: "mobile", image:"No Image"}
+const promotions = [
+  {name:"Promo-JackpotJoy", device: "desktop", image:"No Image"},
+  {name:"Promo-HeartBingo", device: "mobile", image:"No Image"}
 ]
 
 class Search extends Component {
@@ -12,9 +12,9 @@ class Search extends Component {
   render(){
     return (
       <div>
-        <h3>Search Ventures</h3>
+        <h3>Search Promotions</h3>
         <label htmlFor="query">Filter by name: </label>
-        <VentureLists ventures={ventures}/>
+        <VentureLists promotions={promotions}/>
       </div>
     )
   }

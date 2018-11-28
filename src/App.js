@@ -6,7 +6,7 @@ import './App.css'
 
 class App extends Component{
 
-  state = {visiableView: "PromotionEditor"}
+  state = {visiableView: "Search"}
 
   handleMenuChange = (value) =>{
     this.setState({

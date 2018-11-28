@@ -3,8 +3,8 @@
 
  export default ({changeContent})=>(
    <div className="menu">
-      <a href="#" onClick={() => changeContent("AssetUpload")}>AssetUpload</a>
       <a href="#" onClick={() => changeContent("Search")}>Search</a>
+      <a href="#" onClick={() => changeContent("AssetUpload")}>AssetUpload</a>
       <a href="#" onClick={() => changeContent("PromotionEditor")}>CreatEdit</a>
    </div>
  );
