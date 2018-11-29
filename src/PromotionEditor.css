@@ -1,0 +1,7 @@
+.promotion_editor{
+  display: flex;
+  flex-direction: column;
+  /* width: 50%; */
+  background: #ccc;
+  padding: 20px;
+}
