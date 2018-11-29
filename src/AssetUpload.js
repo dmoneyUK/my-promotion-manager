@@ -45,7 +45,7 @@ class AssetUpload extends Component{
         <form className="asset_upload_form">
           <label>
             Name:
-            <input type="text" name="name" />
+            <input type="text" name="name"/>
           </label>
 
           <div>
@@ -53,7 +53,7 @@ class AssetUpload extends Component{
           </div>
         </form>
         <div>
-          <textarea className="asset_upload_textarea">
+          <textarea className="asset_upload_textarea" >
             Asset upload URL: http://my-poromotion-manager
           </textarea>
         </div>

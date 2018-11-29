@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import VentureLists from './PromotionList';
+import PromotionList from './PromotionList';
 import './table.css'
 
 const promotions = [
@@ -14,7 +14,7 @@ class Search extends Component {
       <div>
         <h3>Search Promotions</h3>
         <label htmlFor="query">Filter by name: </label>
-        <VentureLists promotions={promotions}/>
+        <PromotionList promotions={promotions}/>
       </div>
     )
   }
