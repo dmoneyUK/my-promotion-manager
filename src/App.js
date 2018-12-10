@@ -6,12 +6,12 @@ import './App.css'
 
 class App extends Component{
 
-  state = {visiableView: "AssetUpload"}
+  state = {visiableView: "Search"}
 
   handleMenuChange = (value) =>{
-  this.setState({
-    visiableView: value
-  })
+    this.setState({
+      visiableView: value
+    })
   }
   render() {
     return (

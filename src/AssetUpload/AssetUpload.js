@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './AssetUpload.css'
-import Item from './Item'
-import ItemList from './ItemList'
+import Item from '../Common/Item'
+import ItemList from '../Common/ItemList'
 
 class AssetUpload extends Component{
   constructor(){
@@ -35,10 +35,9 @@ class AssetUpload extends Component{
 
   render() {
 
-    let item2 = <Item message="a new message" />;
-    let item3 = <Item message="another message" />;
-    let item4 = <Item message="one more task" />;
-    let allTheThings = [item2, item3, item4];
+    const item2 = <Item message="JackpotJoy" />;
+    const item3 = <Item message="HeartBingo" />;
+    const allTheThings = [item2, item3];
 
     return (
       <div className="AssetUpload">
@@ -46,22 +45,15 @@ class AssetUpload extends Component{
         <form className="asset_upload_form">
           <label>
             Name:
-            <input type="text" name="name" />
+            <input type="text" name="name"/>
           </label>
-          <input type="submit" value="Submit" className="asset_upload_button"/>
-          <input type="submit" value="Reset" className="asset_upload_button"/>
 
           <div>
             <ItemList allItems={allTheThings}/>
-            <br />
-            <br />
-            <br />
-            {/* <ItemCount count={allTheThings.length} /> */}
-            <hr />
           </div>
         </form>
         <div>
-          <textarea className="asset_upload_textarea">
+          <textarea className="asset_upload_textarea" >
             Asset upload URL: http://my-poromotion-manager
           </textarea>
         </div>

@@ -3,11 +3,12 @@
 
  export default ({changeContent})=>(
    <div className="menu">
-      <a href="#" onClick={() => changeContent("AssetUpload")}>AssetUpload</a>
       <a href="#" onClick={() => changeContent("Search")}>Search</a>
-      <a href="#" onClick={() => changeContent("CreatEdit")}>CreatEdit</a>
+      <a href="#" onClick={() => changeContent("AssetUpload")}>AssetUpload</a>
+      <a href="#" onClick={() => changeContent("PromotionEditor")}>CreatEdit</a>
    </div>
  );
+ 
 // import './Menu.css';
 // import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 // import SearchBar from './SearchBar';
