@@ -1,6 +1,6 @@
 import React,{Component} from 'react'
-import Item from './Item.js'
-import ItemList from './ItemList.js'
+import Item from '../Common//Item.js'
+import ItemList from '../Common//ItemList.js'
 import './PromotionEditor.css'
 
 const ventures = [

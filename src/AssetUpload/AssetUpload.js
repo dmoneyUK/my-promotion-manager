@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './AssetUpload.css'
-import Item from './Item'
-import ItemList from './ItemList'
+import Item from '../Common/Item'
+import ItemList from '../Common/ItemList'
 
 class AssetUpload extends Component{
   constructor(){
